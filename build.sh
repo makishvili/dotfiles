@@ -13,9 +13,8 @@ show_usage() {
 }
 
 # clean config files
-# + .vim
 clean() {
-    for file in .zshrc .tmux.conf .vimrc .profile .gitconfig
+    for file in .zshrc .tmux.conf .vimrc .vim .profile .gitconfig
     do
         rm -rf ~/$file
     done
@@ -66,6 +65,7 @@ fi
 ln -sf ~/$DOTFILES_FOLDER/bashrc ~/.bashrc
 ln -sf ~/$DOTFILES_FOLDER/tmux/.tmux.conf ~/.tmux.conf
 ln -sf ~/$DOTFILES_FOLDER/vim/.vimrc ~/.vimrc
+ln -sf ~/$DOTFILES_FOLDER/.vim/ ~/.vim
 ln -sf ~/$DOTFILES_FOLDER/zsh/templates/.zshrc ~/.zshrc
 ln -sf ~/$DOTFILES_FOLDER/.nvmrc ~/.nvmrc
 
