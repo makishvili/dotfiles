@@ -1,5 +1,5 @@
 [core]
-   excludesfile = /Users/seyar/.gitignore_global
+   excludesfile = /Users/makishvili/.gitignore_global
 [alias]
    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [color]
