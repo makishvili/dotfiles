@@ -31,6 +31,8 @@ Clone my repository with configs and execute build.sh:
     git clone git://github.com/makishvili/dotfiles.git ~/dotfiles
     cd ~/dotfiles/
     git submodule update --init --recursive
+    ./install-fonts.sh
+    ./install-zsh.sh
     ./build.sh --name='YOUR NAME' --email=EMAIL
 ```
 Enjoy! :)
