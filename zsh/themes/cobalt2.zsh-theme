@@ -121,4 +121,8 @@ build_prompt() {
   prompt_end
 }
 
-PROMPT='%{$fg_bold[magenta]%}%m%{$reset_color%} %{%f%b%k%}$(build_prompt) '
+# Имя_хоста Директория/ИмяGitВетки
+# PROMPT='%{$fg_bold[magenta]%}%m%{$reset_color%} %{%f%b%k%}$(build_prompt) '
+
+# Директория/ИмяGitВетки
+PROMPT='%{%f%b%k%}$(build_prompt) '
