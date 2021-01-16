@@ -32,6 +32,7 @@ Bundle 'vim-scripts/LargeFile'
 let g:TabLineSet_windows = 0
 let NERDTreeShowHidden = 1
 let g:NERDTreeChDirMode=2
+let g:snipMate = { 'snippet_version' : 1 }
 
 " Common
 syntax on
