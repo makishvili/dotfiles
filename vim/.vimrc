@@ -17,12 +17,12 @@ set nocompatible
 " :BundleClean(!)      - confirm(or auto-ap prove) removal of unused bundles
 " for more details see :h vundle  or https://github.com/gmarik/vundle
     filetype off     " required!
-    set rtp+=~/.dotfiles/.vim/bundle/vundle/
+    set rtp+=~/dotfiles/.vim/bundle/vundle/
     call vundle#rc()
     Bundle 'git://github.com/gmarik/vundle.git'
 
-    source ~/.dotfiles/vim/plugins.vim
-    
+    source ~/dotfiles/vim/plugins.vim
+
     filetype plugin indent on     " required!
 
 " Interface
@@ -60,7 +60,7 @@ set nocompatible
     " Minimal number of lines to scroll when cursor gets off the screen
     " set scrolljump=5
     " Minimal number of lines to keep above and below the cursor
-    " Typewriter mode = keep current line in the center 
+    " Typewriter mode = keep current line in the center
     set scrolloff=999
     " Always show tabs
     " set showtabline=2
@@ -152,7 +152,7 @@ set nocompatible
     set number
     set numberwidth=3
     :highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-    
+
     let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Status line
@@ -176,14 +176,14 @@ set nocompatible
     set laststatus=2
     " Content of the status line
     " Only available when compiled with the +statusline feature
-    set statusline=\ 
+    set statusline=\
     " Buffer number
-    set statusline+=%n:\ 
+    set statusline+=%n:\
     " File name
     set statusline+=%t
     " Modified flag
     set statusline+=%m
-    set statusline+=\ \ 
+    set statusline+=\ \
     " Paste mode flag
     set statusline+=%{&paste?'[paste]\ ':''}
     " File encoding
@@ -458,7 +458,7 @@ set nocompatible
 
     " <Space><Space>
         " Double space to ". "
-        " inoremap <Space><Space> . 
+        " inoremap <Space><Space> .
 
     " ,ts
         " Fix trailing white space
@@ -587,16 +587,16 @@ set nocompatible
     autocmd FileType jade setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " Plugins
-    source ~/.dotfiles/vim/solarized.vim
+    source ~/dotfiles/vim/solarized.vim
 
 " NERDTree
-    source ~/.dotfiles/vim/nerdtree.vim
+    source ~/dotfiles/vim/nerdtree.vim
 
 " Zen Coding
-    source ~/.dotfiles/vim/zen-coding.vim
+    source ~/dotfiles/vim/zen-coding.vim
 
 " UltiSnips
-  "source ~/.dotfiles/vim/ulti-snips.vim
+  "source ~/dotfiles/vim/ulti-snips.vim
 
 " VimWiki
     "    let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/'}]

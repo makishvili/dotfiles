@@ -1,10 +1,10 @@
-# This includes ~/.dotfiles/.profile also
+# This includes ~/dotfiles/.profile also
 if [ -f ~/.profile ]; then
     . ~/.profile
 fi;
 
 # Colors Base16 Shell
-BASE16_SHELL="$HOME/.dotfiles/base16-shell/base16-solarized.light.sh"
+BASE16_SHELL="$HOME/dotfiles/base16-shell/base16-solarized.light.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 setopt PROMPT_SUBST ; PS1='[%n@%m %c$(__git_ps1 " (%s)")]\$ '

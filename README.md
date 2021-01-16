@@ -28,8 +28,8 @@ Install
 Clone my repository with configs and execute build.sh:
 
 ```
-    git clone git://github.com/makishvili/dotfiles.git ~/.dotfiles
-    cd ~/.dotfiles/
+    git clone git://github.com/makishvili/dotfiles.git ~/dotfiles
+    cd ~/dotfiles/
     git submodule update --init --recursive
     ./build.sh --name='YOUR NAME' --email=EMAIL
 ```
