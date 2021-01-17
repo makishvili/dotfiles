@@ -34,6 +34,8 @@ Clone my repository with configs and execute build.sh:
     ./install-fonts.sh
     ./install-zsh.sh
     ./build.sh --name='YOUR NAME' --email=EMAIL
+
+    ./install-nvm-and-node.sh
 ```
 Enjoy! :)
 
