@@ -26,3 +26,5 @@
     branch = false
 [include]
     path = .git-aliases/common
+[advice]
+    statusHints = false
