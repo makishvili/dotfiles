@@ -6,8 +6,8 @@ alias gpt="git push --tags"
 alias gp="git push"
 alias grp='cd "`git rev-parse --show-toplevel`"'
 
-alias gs='git status -s'
-alias пы='git status -s'
+alias gs='git status'
+alias пы='git status'
 alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
