@@ -12,8 +12,10 @@ alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
 alias gcf='git commit --fixup='
+alias gca='git commit -a -m'
 alias go='git checkout '
 
+alias gsh='git show'
 alias gsl='git status | less'
 alias gl='git log'
 
@@ -25,6 +27,14 @@ alias ggo='git pull origin'
 alias gso='git push origin'
 alias gfo='git fetch origin'
 alias gom='git checkout master'
+
+alias gplm='git pull --rebase origin master'
+alias gpld='git pull --rebase origin dev'
+
+alias gpsm='git push origin master'
+alias gpsd='git push origin dev'
+
+alias gclean='git reset HEAD && git checkout . && git clean -f -d'
 
 alias grh='git reset --hard'
 alias gcl='git clean -f -d'

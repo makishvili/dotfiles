@@ -1,4 +1,9 @@
 [alias]
+    hst = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --max-count=30
+    lol = log --pretty=format:'%C(3)%h%d%Creset %s - %C(12)%ae%Creset %ad' --abbrev-commit --graph --decorate --date=short
+    d = diff --word-diff-regex=. --word-diff=color
+    sh = show --word-diff-regex=. --word-diff=color
+
     app = commit --amend -C HEAD
     br = branch
     ci = commit
@@ -15,5 +20,5 @@
     in = !"git remote update -p &> /dev/null; git hist ..@{u}"
     out = !"git hist @{u}.."
     ppush = !"git sh @{u}.."
-    accept-ours "!f() { files=\"$@\"; [ -z $files ] && files='.'; git checkout --ours -- $files; git add -u $files; }; f"
-    accept-theirs "!f() { files=\"$@\"; [ -z $files ] && files='.'; git checkout --theirs -- $files; git add -u $files; }; f"
+    accept-ours = "!f() { files=\"$@\"; [ -z $files ] && files='.'; git checkout --ours -- $files; git add -u $files; }; f"
+    accept-theirs = "!f() { files=\"$@\"; [ -z $files ] && files='.'; git checkout --theirs -- $files; git add -u $files; }; f"

@@ -24,3 +24,5 @@
     helper = cache --timeout=3600
 [pager]
     branch = false
+[include]
+    path = .git-aliases/common
